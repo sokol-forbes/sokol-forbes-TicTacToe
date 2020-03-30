@@ -24,8 +24,13 @@ $(document).ready(() => {
                 if($(`#cell-${winCells[i][j]}`).children().html() === 'X') winCountX += 1;
                 if($(`#cell-${winCells[i][j]}`).children().html() === 'O') winCountO += 1;
             }
-            if(winCountX >= winCountRequered) console.log('win X!');
-            if(winCountO >= winCountRequered) console.log('win O!');
+            if(winCountX >= winCountRequered){
+             console.log('win X!'); break;
+            }
+            if(winCountO >= winCountRequered) {
+                console.log('win O!'); 
+                break; }
+                
         }
 
         let occupedCellsCount = 0;
@@ -34,7 +39,7 @@ $(document).ready(() => {
                 occupedCellsCount += 1;
         }
 
-        if(occupedCellsCount === 9) console.log('draw!');
+        if(occupedCellsCount === 9&&(winCountX >= winCountRequered||winCountO >= winCountRequered)) console.log('draw!');
     }
 
     for (let i = 1; i <= 9; i += 1) {
