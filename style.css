@@ -1,0 +1,36 @@
+body {
+  background-color: #34335f;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.game__cells-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.game__cell {
+  background-color: #6c41b1;
+  margin: 2px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.game__cell-text {
+  line-height: 150px;
+  text-align: center;
+  color: #242352;
+  font-weight: 600;
+}
+
+.flex-break {
+  width: 100%;
+}
+
+p {
+  font-size: 130px;
+}
+
+/*# sourceMappingURL=style.css.map */
