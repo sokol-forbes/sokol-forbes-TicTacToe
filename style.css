@@ -23,6 +23,7 @@ body {
   text-align: center;
   color: #242352;
   font-weight: 600;
+  user-select: none;
 }
 
 .flex-break {
