@@ -25,13 +25,13 @@ $(document).ready(() => {
                 if($(`#cell-${winCells[i][j]}`).children().html() === 'O') winCountO += 1;
             }
             if(winCountX >= winCountRequered){
-                $(`#total`).children().html(' win X')
+                $(`#total`).children().html('Win X')
              console.log('win X!');
              gameOver=true;
               break;
             }
             if(winCountO >= winCountRequered) {
-                $(`#total`).children().html(' win O')
+                $(`#total`).children().html('Win O')
                 console.log('win O!'); 
                 gameOver=true;
                 break; }
