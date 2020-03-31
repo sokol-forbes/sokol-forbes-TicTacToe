@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 
+
 .game__cells-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -34,30 +35,44 @@ p {
   font-size: 130px;
 }
 .total{
-  margin-left: 50px;
-  height: 80px;
-  width: 200px;
-  background-color:#5b59a7;
+  margin-left: 10px;
+  height: 90px;
+  width: 240px;
+  background-color:#34335f;
   margin-top: 30px;
   border-radius: 10px;
+  text-align: center;
+  user-select: none;
+  
 }
 .total-text{
-  font-size: 70px;
+  font-size: 60px;
   color: blanchedalmond;
   text-align: center;
+  
 }
 .clear{
-  height: 80px;
-  width: 170px;
+  height: 90px;
+  width: 240px;
   background-color: #44437e;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 30px;
   border-radius: 10px;
+  text-align: center;
+  user-select: none;
+  
+}
+
+.clear:hover {
+  color: #4f5c79; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline;
 }
 .clear-text{
-  font-size: 70px;
+  font-size: 60px;
   color: blanchedalmond;
   text-align: center;
+ 
 }
+
 
 /*# sourceMappingURL=style.css.map */
