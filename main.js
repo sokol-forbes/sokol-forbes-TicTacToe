@@ -12,7 +12,7 @@ $(document).ready(() => {
     const winCountRequered = 3;
 
     let turn = true;
-
+    let gameOver=false;
 
     function checkWin () {
         
@@ -25,10 +25,15 @@ $(document).ready(() => {
                 if($(`#cell-${winCells[i][j]}`).children().html() === 'O') winCountO += 1;
             }
             if(winCountX >= winCountRequered){
-             console.log('win X!'); break;
+                $(`#total`).children().html(' win X')
+             console.log('win X!');
+             gameOver=true;
+              break;
             }
             if(winCountO >= winCountRequered) {
+                $(`#total`).children().html(' win O')
                 console.log('win O!'); 
+                gameOver=true;
                 break; }
                 
         }
@@ -39,7 +44,11 @@ $(document).ready(() => {
                 occupedCellsCount += 1;
         }
 
-        if(occupedCellsCount === 9&&(winCountX >= winCountRequered||winCountO >= winCountRequered)) console.log('draw!');
+        if(occupedCellsCount === 9 && !gameOver){
+            $(`#total`).children().html(' Draw')
+             console.log('draw!');
+             gameOver=true;
+            }
     }
 
     for (let i = 1; i <= 9; i += 1) {
@@ -56,5 +65,10 @@ $(document).ready(() => {
             
         });
     }
+    $(`#clear`).click(function() {
+        location.reload();
+    }
+    
+    );
     
 });
