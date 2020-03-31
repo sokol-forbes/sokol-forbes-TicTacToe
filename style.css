@@ -15,8 +15,8 @@ body {
 .game__cell {
   background-color: #6c41b1;
   margin: 2px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
 }
 .game__cell-text {
